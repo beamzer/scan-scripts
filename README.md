@@ -1,5 +1,4 @@
-# scan-scripts
-collection of various python scan scripts
+scan-scripts = a collection of various python scan scripts
 
 # scan_http2.py
 python script to check from a list of websites, of an ip-range if the webserver supports HTTP/2
@@ -51,7 +50,6 @@ python script to search for citrix netscalers
 
 This works by checking if there is a HTTPS service active on the given ip-address and when it redirects to "/logon/LogonPoint/tmindex.html" it'probably a Citrix Netscaler
 
-As a bonus the script will also show you hostnames and SANs retreived from the certificate on other found HTTPS services
 ```
 usage: find_netscalers.py [-h] -i IPRANGE [IPRANGE ...] [-d] [-s] [-t TIMEOUT] [-p PARALLEL] [-v] [-n]
 
