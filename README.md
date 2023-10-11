@@ -27,6 +27,25 @@ recursively scans a website for webpages with forms and iframes
 % ./formfinder.py www.somewebsite.tld 1
 ```
 
+# scan_https_certs.py
+```
+% ./scan_https_certs.py -h
+usage: scan_https_certs.py [-h] -i IPRANGE [IPRANGE ...] [-d] [-t TIMEOUT] [-p PARALLEL] [-v]
+
+Scan subnet for hosts on HTTPS, parse certificates and and print out all hostnames
+
+options:
+  -h, --help            show this help message and exit
+  -i IPRANGE [IPRANGE ...], --iprange IPRANGE [IPRANGE ...]
+                        The CIDR IP range to process (can be multiple separated by spaces)
+  -d, --debug           Enable debug mode
+  -t TIMEOUT, --timeout TIMEOUT
+                        Connection timeout in seconds
+  -p PARALLEL, --parallel PARALLEL
+                        Number of parallel scans, defaults to 1
+  -v, --verbose         Enable verbose mode
+```
+
 # find_netscalers
 python script to search for citrix netscalers
 
