@@ -45,6 +45,14 @@ options:
   -v, --verbose         Enable verbose mode
 ```
 
+# scan-for-CORS.py
+Script to check a list of websites to see if they are vulnerable for CORS.
+For an explanation of the CORS vulnerability see: https://portswigger.net/web-security/cors
+```
+% python3 scan-for-CORS.py
+usage: scan-for-CORS.py [-h] filename
+```
+
 # find_netscalers
 python script to search for citrix netscalers
 
